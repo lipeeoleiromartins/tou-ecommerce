@@ -1,0 +1,17 @@
+# TOŪ — Arte & Ambientação
+
+> TOŪ é uma marca de arte estilizada e exclusiva que dá identidade, ambientação e design a espaços residenciais e comerciais.
+
+## Visão Geral
+Plataforma digital e portfólio/e-commerce de peças decorativas de alto padrão, incluindo quadros, almofadas, cabideiros, porta-maternidade e arte contemporânea personalizada. Cada peça pode receber customização exclusiva de acordo com a preferência do cliente.
+
+## Funcionalidades Principais
+- **Catálogo de Projetos/Obras**: Visualização detalhada de peças com especificações de medidas, valores por opção e tags de estilo.
+- **Encomendas Diretas**: Integração direta para fechar pedidos e encomendas personalizadas via WhatsApp.
+- **Identidade Visual Minimalista**: Experiência de navegação fluida construída com foco na estética e sofisticação.
+
+## Links Essenciais
+- Início: https://tou-decoracao.com/
+- Trabalhos / Obras: https://tou-decoracao.com/work
+- Sobre a Marca: https://tou-decoracao.com/about
+- Contato: https://tou-decoracao.com/contact

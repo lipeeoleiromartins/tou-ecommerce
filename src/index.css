@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* TOŪ – Fundo Lilás Sofisticado + Textos com Contraste Preto Nítido */
+    --background: 257 25% 92%;
+    --foreground: 0 0% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+
+    --primary: 330 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 257 20% 84%;
+    --secondary-foreground: 0 0% 5%;
+
+    --muted: 257 15% 86%;
+    --muted-foreground: 0 0% 20%; /* Leitura nítida e bem escura */
+
+    --accent: 330 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 257 15% 78%;
+    --input: 257 15% 78%;
+    --ring: 330 80% 55%;
+
+    --radius: 0.5rem;
+
+    --separator: 257 15% 78%;
+  }
+
+  .dark {
+    /* Modo escuro com fundo profundo elegante para destacar a galeria */
+    --background: 257 20% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 257 20% 14%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 257 20% 14%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 330 85% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 257 15% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 257 15% 20%;
+    --muted-foreground: 257 10% 75%;
+
+    --accent: 330 85% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 257 15% 25%;
+    --input: 257 15% 25%;
+    --ring: 330 85% 65%;
+
+    --separator: 257 15% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary selection:text-primary-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.container-wide {
+  @apply max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16;
+}
+
+.text-display {
+  @apply font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground;
+}
+
+.text-label {
+  @apply text-xs uppercase tracking-widest text-foreground/70 font-semibold;
+}
+
+.border-separator {
+  border-color: hsl(var(--separator));
+}
+
+/* Correção para o fundo da página inicial / Hero */
+.hero-bg-cover {
+  background-image: url('/trio-grandes-formatos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
