@@ -19,7 +19,11 @@ export function ImagePlaceholder({
       <img
         src={src}
         alt={alt}
-        className={cn("w-full h-full object-cover", imgClassName, className)}
+        className={cn(
+          "w-full h-full object-cover opacity-100 brightness-100",
+          imgClassName,
+          className,
+        )}
       />
     );
   }
@@ -30,7 +34,7 @@ export function ImagePlaceholder({
       aria-label={`${alt} — imagem em breve`}
       className={cn(
         "w-full h-full flex flex-col items-center justify-center gap-2 bg-secondary border border-dashed border-foreground/30 text-foreground/60",
-        className
+        className,
       )}
     >
       <span className="text-xs uppercase tracking-widest font-mono">TOŪ</span>
